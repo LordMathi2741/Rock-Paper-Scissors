@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 body, html{
-    padding: 0;
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: #11998e;  /* fallback for old browsers */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
     margin: 0;
     max-width: 100%;
-    border: none;
     overflow: hidden;
-    background: #11998e;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    padding: 0;
 }
 
 h1 {
-    text-align: center;
     color:aliceblue;
     font-family: 'Roboto';
+    text-align: center;
 }
 
 div  {
@@ -23,14 +22,14 @@ div  {
 }
 
 .game{
-    font-size: 60px;
-    max-width: 100%;
-    min-width: 30%;
-    max-height: 0%;
-    margin-block-start: 5%;
     display: flex;
     flex-direction: row;
+    font-size: 60px;
     justify-content: space-evenly;
+    margin-block-start: 5%;
+    max-height: 0%;
+    max-width: 100%;
+    min-width: 30%;
 }
 
 .game p {
@@ -39,48 +38,56 @@ div  {
 
 div button{
     border-color: transparent;
+    border-radius: 25px;
+    box-shadow:  -1px 3px rgb(37, 97, 97);
+    color:#11998e;
     font-family: 'Roboto';
     font-size: large;
+    margin-block-start: 5%;
     max-width: 40%;
     min-width: 10%;
-    margin-block-start: 5%;
-    padding-block-start: 1%;
     padding-block-end: 1%;
+    padding-block-start: 1%;
     text-align: center;
-    border-radius: 25px;
-    box-shadow:  -9px -6px rgb(37, 97, 97);
-    color:#11998e;
 }
 #choose{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: larger;
     color:aliceblue;
     font-size: 25px;
+    font-size: larger;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 #Score{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: larger;
     color:aliceblue;
     font-size: 25px;
+    font-size: larger;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 #computer{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: larger;
     color:aliceblue;
     font-size: 25px;
+    font-size: larger;
+    text-align: center;
+    text-transform: capitalize;
 }
 div button:hover{
     background-color: teal;
-    box-shadow:  -7px -6px black;
+    box-shadow:  -1px 3px black;
     color:aliceblue;
     cursor: pointer;
 }
 
+@media only screen and (min-width:900px) {
+    div button{
+     width:20%;
+     height: 50px;
+     padding-block-start: 1%;
+     padding-block-end: 1%;
+   }
+}
 
 
 
